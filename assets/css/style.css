@@ -1,0 +1,1313 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+a,a:hover
+{
+	text-decoration: none;
+}
+img
+{
+	width: 100%;
+	display: block;
+}
+
+html,body
+{
+	font-family: sans-serif;
+	width: 100%;
+	height: 100%;
+	background: #293941
+}
+
+section,nav,article,footer,header
+{
+	display: block
+}
+
+ 
+
+@media screen and (min-width:960px){
+
+
+    header
+    {
+      background: #222;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      background:#30424c;
+ 
+    }
+
+  section
+  {
+    width: 1024px;
+    height: 90vh;
+    margin: 0px auto;
+  }
+
+  figure#logo
+  {
+    display: block;
+    top: 0px;
+    height: 125px;
+    left: 84px;
+    position: absolute;
+    width: 255px;
+    background:#f1f1f1;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    border:1px solid;
+    z-index: 2;
+    animation: 1S  famady 1s ;
+      -webkit-animation: 1S famady 1s;
+  }
+
+  nav
+  {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+  }
+
+  nav ul li
+  {
+    list-style: none;
+    display: inline-block;
+    
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    font-family: 'Knewave', cursive;
+  }
+
+  nav ul li a:hover {
+    background: #30856c;
+  }
+
+   nav ul li .active
+   {
+    background: #30856c;
+   }
+
+
+   nav ul li a .icon-menu
+   {
+    font-size: 22px;
+    padding-right: 6px
+   }
+
+   p.vertical
+   {
+    font-size: 14px;
+    transform: translate(-50%, 50%) rotate(-90deg);
+    -webkit-transform: translate(-50%, 50%) rotate(-90deg);
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+   }
+
+   article.gd
+   {
+
+    width: 48%;
+    float: left;
+    height: auto;
+    margin-top: 25vh;
+    margin-right: 15px;
+    color: #fff;
+   }
+
+   div.mbappe
+   {
+    height: 384px;
+    width: 444px;
+    display: block;
+    overflow: hidden;
+    background: url(../img/mbappe.jpg)0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    transition: background-size 2s ease-in;
+    cursor:pointer;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.4)
+   }
+
+    div.mbappe:hover
+    {
+      -webkit-background-size: 150% 150%
+    }
+
+    div.mbappe h2
+    {
+      display: none;
+      background: transparent;
+      padding-top: 50%;
+      text-align: center;
+      
+    }
+
+    div.mbappe:hover h2
+    {
+        display: block;
+        background: rgba(0,0,0,0.5);
+        height: 384px;
+      width: 444px;
+    }
+
+    #a span
+    {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      width: 30px;
+      height: 50px;
+      margin-left: -15px;
+      border-radius:50px;
+      border:2px solid #fff;
+    }
+
+    #a span::before
+    {
+      position: absolute;
+      top: 10px;
+      left: 40%;
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      margin-right: 3px;
+      animation: 500ms  famady 2s infinite;
+      -webkit-animation: 500ms famady 2s infinite
+    }
+
+    @keyframes famady
+    {
+
+    
+    30%{transform: translate(0,0);opacity: 0}
+
+    40%{opacity: 1}
+
+    80%{transform: translate(0,20px)}
+
+
+    }
+
+    h1
+    {
+      font-size: 32px;
+      margin: 45px 0px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    button.btn
+    {
+      padding: 5px 77px;
+      border:2px solid #fff;
+      background: transparent;
+      margin:15px 0px;
+      font-size: 15px;
+      color: white;
+      border-radius: 50px;
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+
+    button.btn:hover
+    {
+      background: #30424c;
+    }
+
+    p.premier
+    {
+      height: auto;
+      width: 70%;
+      line-height: 25px;
+    }
+
+    .lien-p
+    {
+      color:#ff5151;
+    }
+
+    .lien-p:hover
+    {
+      text-decoration: underline;
+    }
+
+    .equipe
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 15%;
+    width: 80%;
+    min-width: 320px;
+
+
+    }
+
+    .equipe figure img
+    {
+      width: 280px;
+      height: 243px;
+      box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+    }
+
+    .equipe figure img:nth-child(2)
+    {
+    height: 430px;
+    display: none;
+    }
+
+    figcaption
+    {
+        color: #fff;
+        margin:10px 0px
+    }
+
+    img.couleur
+    {
+      filter: contrast(200%);
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+
+     img.couleur:hover
+     {
+        filter:grayscale(0);
+     }
+
+
+     article.gda
+    {
+        color:white;
+        height: auto;
+        margin-top: 25vh;
+        margin-left: 2%;
+        float: left;
+        width: 460px;
+    }
+
+
+
+    /*div.reece
+    {
+        width: 442px;
+        height: 405px;
+        position: absolute;
+        background: url(../img/reece_king.jpg);
+        z-index:2;
+        margin-top: 80px;
+        right: 290px;
+    }*/
+
+    div.fond
+    {
+        width: 337px;height: 597px;
+        position: absolute;
+        right: 100px;
+         background: url(../img/droite.jpg);
+
+    }
+
+
+    .reece
+    {
+        max-width: 100%;
+        z-index: 5
+        margin-top:80px;
+        display: block;
+    }
+
+
+  }
+
+
+  @media screen and (min-width:768px) and (max-width:960px){
+
+
+    header
+    {
+    background: #222;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background:#30424c;
+    /*background: #006d55;*/
+    
+  }
+
+  section
+  {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+
+  }
+
+  .mbappe-section
+  {
+    text-align: center;
+    padding-top:120px;
+  }
+
+  figure#logo
+  {
+    display: block;
+    top: 0px;
+    height: 70px;
+    left: 7px;
+    position: absolute;
+    width: 150px;
+    background:#f1f1f1;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    border:1px solid;
+    z-index: 2;
+    animation: 1S  famady 1s ;
+      -webkit-animation: 1S famady 1s;
+  }
+
+  nav
+  {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+  }
+
+  nav ul li
+  {
+    list-style: none;
+    display: inline-block;
+    
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    font-family: 'Knewave', cursive;
+  }
+
+  nav ul li a .list-item
+  {
+    display: none;
+  }
+
+  nav ul li a:hover {
+    background: #30856c;
+  }
+
+   nav ul li .active
+   {
+    background: #30856c;
+   }
+
+
+   nav ul li a .icon-menu
+   {
+    font-size: 22px;
+    padding-right: 6px
+   }
+
+   p.vertical
+   {
+      display: none;
+   }
+
+   article.gd
+   {
+
+    width: 48%;
+    float: none;
+    height: auto;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   div.mbappe
+   {
+    height: 400px;
+    width: 400px;
+    display: block;
+    overflow: hidden;
+    background: url(../img/mbappe.jpg)0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    transition: background-size 2s ease-in;
+    cursor:pointer;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+    border-radius:50%;
+   }
+
+    div.mbappe:hover
+    {
+      -webkit-background-size: 150% 150%
+    }
+
+    div.mbappe h2
+    {
+      display: none;
+      background: transparent;
+      padding-top: 50%;
+      text-align: center;
+      
+    }
+
+    div.mbappe:hover h2
+    {
+        display: block;
+        background: rgba(0,0,0,0.5);
+        height: 400px;
+        width: 444px;
+    }
+
+    #a span
+    {
+      position: absolute;
+      right: 20px;
+      top: 45%;
+      width: 30px;
+      height: 50px;
+      margin-left: -15px;
+      border-radius:50px;
+      border:2px solid #fff;
+    }
+
+    #a span::before
+    {
+      position: absolute;
+      top: 10px;
+      left: 40%;
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      margin-right: 3px;
+      animation: 500ms  famady 2s infinite;
+      -webkit-animation: 500ms famady 2s infinite
+    }
+
+    @keyframes famady
+    {
+
+    
+    30%{transform: translate(0,0);opacity: 0}
+
+    40%{opacity: 1}
+
+    80%{transform: translate(0,20px)}
+
+
+    }
+
+    h1
+    {
+      font-size: 32px;
+      margin: 45px 0px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    button.btn
+    {
+      padding: 5px 77px;
+      border:2px solid #fff;
+      background: transparent;
+      margin:15px 0px;
+      font-size: 15px;
+      color: white;
+      border-radius: 50px;
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+
+    button.btn:hover
+    {
+      background: #30424c;
+    }
+
+    p.premier
+    {
+      height: auto;
+      width: 100%
+      line-height: 25px;
+    }
+
+    .lien-p
+    {
+      color:#ff5151;
+    }
+
+    .lien-p:hover
+    {
+      text-decoration: underline;
+    }
+
+    .equipe
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15%;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .equipe figure
+    {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .equipe figure img
+    {
+      width: 280px;
+      height: 243px;
+      box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+      margin:0px auto;
+      
+    }
+
+    .equipe figure img:nth-child(2)
+    {
+    height: 430px;
+    display: none;
+    }
+
+    figcaption
+    {
+        color: #fff;
+        margin:10px 0px
+    }
+
+    img.couleur
+    {
+      filter: contrast(200%);
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+
+     img.couleur:hover
+     {
+        filter:grayscale(0);
+     }
+
+       article.gda
+    {
+        color:white;
+        height: auto;
+        margin: 25vh auto 5%;
+        width: 50%;
+    }
+
+
+
+    /*iv.reece
+    {
+        width: 442px;
+        height: 405px;
+        position: absolute;
+        background: url(../img/reece_king.jpg);
+        z-index:2;
+        margin-top: 80px;
+        right: 290px;
+    }
+*/
+    div.fond
+    {
+        width: 337px;height: 597px;
+        position: absolute;
+        right: 100px;
+         background: url(../img/droite.jpg);
+
+    }
+
+
+    img.reece
+    {
+        max-width: 100%;
+        position: absolute;
+        z-index: 5
+        margin-top:80px;
+        display: block;
+    }
+
+      
+
+
+  }
+
+  @media screen and (min-width:580px) and (max-width: 768px){
+     header
+    {
+    background: #222;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background:#30424c;
+    /*background: #006d55;*/
+    
+  }
+
+  section
+  {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+
+  }
+
+  .mbappe-section
+  {
+    text-align: center;
+    padding-top:120px;
+  }
+
+  figure#logo
+  {
+    display: block;
+    top: 0px;
+    height: 70px;
+    left: 7px;
+    position: absolute;
+    width: 150px;
+    background:#f1f1f1;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    border:1px solid;
+    z-index: 2;
+    animation: 1S  famady 1s ;
+      -webkit-animation: 1S famady 1s;
+  }
+
+  nav
+  {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+  }
+
+  nav ul li
+  {
+    list-style: none;
+    display: inline-block;
+    
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    font-family: 'Knewave', cursive;
+
+  }
+
+  nav ul li a .list-item
+  {
+    display: none;
+  }
+
+  nav ul li a:hover {
+    background: #30856c;
+  }
+
+   nav ul li .active
+   {
+    background: #30856c;
+   }
+
+
+   nav ul li a .icon-menu
+   {
+    font-size: 22px;
+    padding-right: 6px
+   }
+
+   p.vertical
+   {
+      display: none;
+   }
+
+   article.gd
+   {
+
+    width: 100%;
+    float: none;
+    height: auto;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .article.gd img
+   {
+      margin: 0 auto;
+   }
+
+   div.mbappe
+   {
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    display: block;
+    overflow: hidden;
+    background: url(../img/mbappe.jpg)0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    transition: background-size 2s ease-in;
+    cursor:pointer;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+    border-radius:50%;
+   }
+
+    div.mbappe:hover
+    {
+      -webkit-background-size: 150% 150%
+    }
+
+    div.mbappe h2
+    {
+      display: none;
+      background: transparent;
+      padding-top: 50%;
+      text-align: center;
+      
+    }
+
+    div.mbappe:hover h2
+    {
+        display: block;
+        background: rgba(0,0,0,0.5);
+        height: 400px;
+        width: 444px;
+    }
+
+    #a span
+    {
+      position: absolute;
+      right: 20px;
+      top: 45%;
+      width: 30px;
+      height: 50px;
+      margin-left: -15px;
+      border-radius:50px;
+      border:2px solid #fff;
+    }
+
+    #a span::before
+    {
+      position: absolute;
+      top: 10px;
+      left: 40%;
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      margin-right: 3px;
+      animation: 500ms  famady 2s infinite;
+      -webkit-animation: 500ms famady 2s infinite
+    }
+
+    @keyframes famady
+    {
+
+    
+    30%{transform: translate(0,0);opacity: 0}
+
+    40%{opacity: 1}
+
+    80%{transform: translate(0,20px)}
+
+
+    }
+
+    h1
+    {
+      font-size: 32px;
+      margin: 45px 0px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    button.btn
+    {
+      padding: 5px 77px;
+      border:2px solid #fff;
+      background: transparent;
+      margin:15px 0px;
+      font-size: 15px;
+      color: white;
+      border-radius: 50px;
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+
+    button.btn:hover
+    {
+      background: #30424c;
+    }
+
+    p.premier
+    {
+      height: auto;
+      width: 100%
+      line-height: 25px;
+    }
+
+    .lien-p
+    {
+      color:#ff5151;
+    }
+
+    .lien-p:hover
+    {
+      text-decoration: underline;
+    }
+
+    .equipe
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15%;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .equipe figure
+    {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .equipe figure img
+    {
+      width: 280px;
+      height: 243px;
+      box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+      margin:0px auto;
+      
+    }
+
+    .equipe figure img:nth-child(2)
+    {
+    height: 430px;
+    display: none;
+    }
+
+    figcaption
+    {
+        color: #fff;
+        margin:10px 0px
+    }
+
+    img.couleur
+    {
+      filter: contrast(200%);
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+
+     img.couleur:hover
+     {
+        filter:grayscale(0);
+     }
+
+       article.gda
+    {
+        color:white;
+        height: auto;
+        margin-top: 25vh;
+        margin-left: 2%;
+        float: left;
+        width: 460px;
+    }
+
+
+    img.reece
+    {
+        max-width: 100%;
+        position: absolute;
+        z-index: 5
+        margin-top:80px;
+        display: block;
+    }
+
+
+
+    /*div.reece
+    {
+        width: 442px;
+        height: 405px;
+        position: absolute;
+        background: url(../img/reece_king.jpg);
+        z-index:2;
+        margin-top: 80px;
+        right: 290px;
+    }*/
+
+    div.fond
+    {
+        width: 337px;height: 597px;
+        position: absolute;
+        right: 100px;
+         background: url(../img/droite.jpg);
+
+    }
+  }
+  @media screen and (max-width:580px){
+
+    header
+    {
+    background: #222;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding-bottom: 20px;
+    background:#30424c;
+    
+  }
+
+  section
+  {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    
+
+  }
+
+  .mbappe-section
+  {
+    text-align: center;
+    padding-top:190px;
+  }
+
+  figure#logo
+  {
+    display: block;
+    margin:10px auto;
+    height: 70px;
+    left: 7px;
+    position: static;
+    width: 150px;
+    background:#f1f1f1;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border:1px solid;
+    z-index: 2;
+    animation: 1S  famady 1s ;
+      -webkit-animation: 1S famady 1s;
+  }
+
+  nav
+  {
+    display: inline-block;
+   text-align: center;
+   width: 100%
+  }
+
+  nav ul li
+  {
+    list-style: none;
+    display: inline-block;
+    
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    font-family: 'Knewave', cursive;
+    border-radius: 5px;
+ 
+  }
+
+  nav ul li a .list-item
+  {
+    display: none;
+  }
+
+  nav ul li a:hover {
+    background: #30856c;
+  }
+
+   nav ul li .active
+   {
+    background: #30856c;
+   }
+
+
+   nav ul li a .icon-menu
+   {
+    font-size: 22px;
+    padding-right: 6px
+   }
+
+   p.vertical
+   {
+      display: none;
+   }
+
+   article.gd
+   {
+
+    width: 100%;
+    float: none;
+    height: auto;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .article.gd img
+   {
+      margin: 0 auto;
+   }
+
+   div.mbappe
+   {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    display: block;
+    overflow: hidden;
+    background: url(../img/mbappe.jpg)0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    transition: background-size 2s ease-in;
+    cursor:pointer;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+
+
+   }
+
+    div.mbappe:hover
+    {
+      -webkit-background-size: 150% 150%
+    }
+
+    div.mbappe h2
+    {
+      display: none;
+      
+      
+    }
+
+    #a span
+    {
+      position: absolute;
+      right: 15px;
+      top: 60%;
+      width: 30px;
+      height: 50px;
+      margin-left: -15px;
+      border-radius:50px;
+      border:2px solid #fff;
+      display: none;
+    }
+
+    #a span::before
+    {
+      position: absolute;
+      top: 10px;
+      left: 40%;
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      margin-right: 3px;
+      animation: 500ms  famady 2s infinite;
+      -webkit-animation: 500ms famady 2s infinite;
+
+    }
+
+    @keyframes famady
+    {
+
+    
+    30%{transform: translate(0,0);opacity: 0}
+
+    40%{opacity: 1}
+
+    80%{transform: translate(0,20px)}
+
+
+    }
+
+    h1
+    {
+      font-size: 38px;
+      margin: 45px 0px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    button.btn
+    {
+      padding: 5px 77px;
+      border:2px solid #fff;
+      background: transparent;
+      margin:15px 0px;
+      font-size: 15px;
+      color: white;
+      border-radius: 50px;
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+
+    button.btn:hover
+    {
+      background: #30424c;
+    }
+
+    p.premier
+    {
+      height: auto;
+      width: 100%
+      line-height: 25px;
+    }
+
+    .lien-p
+    {
+      color:#ff5151;
+    }
+
+    .lien-p:hover
+    {
+      text-decoration: underline;
+    }
+
+    .equipe
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15%;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .equipe figure
+    {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .equipe figure img
+    {
+      width: 280px;
+      height: 243px;
+      box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+      margin:0px auto;
+      
+    }
+
+    .equipe figure img:nth-child(2)
+    {
+    height: 430px;
+    display: none;
+    }
+
+    figcaption
+    {
+        color: #fff;
+        margin:10px 0px
+    }
+
+    img.couleur
+    {
+      filter: contrast(200%);
+      transition-duration: .5s;
+      cursor: pointer;
+    }
+
+     img.couleur:hover
+     {
+        filter:grayscale(0);
+     }
+
+
+    article.gda
+    {
+        color:white;
+        height: auto;
+        margin: 25vh auto 5%;
+        width: 50%;
+    }
+
+
+
+   /* div.reece
+    {
+        width: 442px;
+        height: 405px;
+        position: absolute;
+        background: url(../img/reece_king.jpg);
+        z-index:2;
+        margin-top: 80px;
+        right: 290px;
+    }
+  */
+    div.fond
+    {
+        width: 337px;height: 597px;
+        position: absolute;
+        right: 100px;
+         background: url(../img/droite.jpg);
+
+    }
+
+    img.reece
+    {
+        max-width: 100%;
+        position: absolute;
+        z-index: 5
+        margin-top:80px;
+        display: block;
+    }
+
+
+  }
+
+  /*--fin responsive--*/
+
+  hr
+  {
+      width: 50px;
+      border:2px solid white;
+      margin: 10px 0px;
+      border-radius: 4px
+  }
+
+  
+
+  
+
+
